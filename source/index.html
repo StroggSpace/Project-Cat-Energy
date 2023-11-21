@@ -2,183 +2,182 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Cat Energy</title>
   </head>
+
   <body class="page__body">
-    <header class="page-header">
+    <header class="page__header page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="#">
-          <img
-            src="img/logo-small.svg"
-            width="33.32px"
-            height="37.61px"
-            alt="Магазин Cat Energy"
-          />
-        </a>
+        <nav class="page-header__nav">
+          <a class="page-header__logo logo" href="#">
+            <img
+              class="logo__image"
+              src="img/logo-small.svg"
+              width="33.32px"
+              height="37.61px"
+              alt="Магазин Cat Energy"
+            />
 
-        <a class="page-header__logo" href="#">
-          <img
-            src="img/logo-small-name.svg"
-            width="101px"
-            height="18px"
-            alt="Главная страница магазина"
-          />
-        </a>
+            <img
+              class="logo__name"
+              src="img/logo-small-name.svg"
+              width="101px"
+              height="18px"
+              alt="Главная страница магазина"
+            />
+          </a>
 
-        <button class="page-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-      </div>
+          <button class="page-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
 
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list main-nav__list--closed">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Главная</a>
+          <ul class="page-header__list page-header__list--opened site-nav">
+            <li class="site-nav__item site-nav__item--active">
+              <a class="site-nav__link" href="#">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="../catalog.html"
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="../catalog.html"
                 >Каталог продукции</a
               >
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="../form.html">Подбор программы</a>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="../form.html">Подбор программы</a>
             </li>
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </header>
 
-    <main class="page-main">
-      <section class="page-main__program">
-        <h1 class="page-main__program-title">
+    <main class="page__main page-main">
+      <section class="page-main__header program">
+        <h1 class="program__title">
           Функциональное<br />
           питание для котов
         </h1>
-        <p class="page-main__program-description">
-          Занялся собой? Займись котом!
-        </p>
-        <img class="page-main__program-image" src="img/demo-product-img.png"
-        width: 280px height: 270px alt="Cat Energy PRO с курицей -
-        демонстрационное изображение">
-        <a class="page-main__program-link" href="#">Подобрать программу</a>
+        <p class="program__description">Занялся собой? Займись котом!</p>
+        <img class="program__image" src="img/demo-product-img.png" width: 280px
+        height: 270px alt="Cat Energy PRO с курицей - демонстрационное
+        изображение">
+        <a class="program__button button" href="#">Подобрать программу</a>
       </section>
 
-      <section class="page-main__options">
+      <section class="page-main__section catalog-options">
         <h2 class="visually-hidden">Основные программы питания</h2>
-        <ul class="page-main__options-list">
-          <li class="page-main__options-item">
-            <h3 class="page-main__options-title">Похудение</h3>
-            <p class="page-main__options-description">
-              Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
-              сбросить лишний вес.
-            </p>
-            <a class="page-main__options-link" href="#">Каталог Slim</a>
-          </li>
-          <li class="page-main__options-item">
-            <h3 class="page-main__options-title">Набор массы</h3>
-            <p class="page-main__options-description">
-              Заработать авторитет среди дворовых котов и даже собак? Серия Cat
-              Energy Pro поможет вашему коту нарастить необходимые мышцы!
-            </p>
-            <a class="page-main__options-link" href="#">Каталог Pro</a>
-          </li>
-        </ul>
+
+        <article class="catalog-options__item">
+          <h3 class="catalog-options__title">Похудение</h3>
+          <p class="catalog-options__description">
+            Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
+            сбросить лишний вес.
+          </p>
+          <a class="catalog-options__link" href="#">Каталог Slim</a>
+        </article>
+
+        <article class="catalog-options__item">
+          <h3 class="catalog-options__title">Набор массы</h3>
+          <p class="catalog-options__description">
+            Заработать авторитет среди дворовых котов и даже собак? Серия Cat
+            Energy Pro поможет вашему коту нарастить необходимые мышцы!
+          </p>
+          <a class="catalog-options__link" href="#">Каталог Pro</a>
+        </article>
       </section>
 
-      <section class="page-main__advantages">
-        <h2 class="page-main__advantages-title">Как это работает</h2>
-        <ul class="page-main__advantages-list">
-          <li class="page-main__advantages-item">
+      <section class="page-main__section advantages">
+        <h2 class="page-main__title">Как это работает</h2>
+        <ol class="advantages__list">
+          <li class="advantages__item">
             <p>
               Функциональное питание содержит только полезные питательные
               вещества.
             </p>
           </li>
-          <li class="page-main__advantages-item">
+          <li class="advantages__item">
             <p>
               Выпускается в виде порошка, который нужно лишь залить кипятком и
               готово.
             </p>
           </li>
-          <li class="page-main__advantages-item">
+          <li class="advantages__item">
             <p>
               Замените один-два приема обычной еды на наше функциональное
               питание.
             </p>
           </li>
-          <li class="page-main__advantages-item">
+          <li class="advantages__item">
             <p>
               Уже через месяц наслаждайтесь изменениями к лучшему вашего
               питомца!
             </p>
           </li>
-        </ul>
+        </ol>
       </section>
 
-      <section class="page-main__cat-slider">
-        <h2 class="page-main__cat-slider-title">Живой пример</h2>
-        <p class="page-main__cat-slider-description">
+      <section class="page-main__section cat-slider">
+        <h2 class="page-main__title">Живой пример</h2>
+        <p class="cat-slider__description">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <dl class="page-main__cat-slider-list">
-          <dt class="page-main__cat-slider-item"><b>5 кг</b></dt>
-          <dd class="page-main__cat-slider-item">Снижение веса</dd>
-          <dt class="page-main__cat-slider-item"><b>60 дней</b></dt>
-          <dd class="page-main__cat-slider-item">Затрачено времени</dd>
+        <dl class="cat-slider__list">
+          <dt class="cat-slider__title"><b>5 кг</b></dt>
+          <dd class="cat-slider__definition">Снижение веса</dd>
+          <dt class="cat-slider__title"><b>60 дней</b></dt>
+          <dd class="cat-slider__definition">Затрачено времени</dd>
         </dl>
 
-        <p class="page-main__cat-slider-price">
+        <p class="cat-slider__price">
           <b>Затраты на питание: 15 000 руб.</b>
         </p>
 
-        <div class="page-main__cat-slider-image-wrapper">
+        <div class="cat-slider__image-wrapper">
           <img
-            class="page-main__cat-slider-image page-main__cat-slider-image--left"
+            class="cat-slider__image cat-slider__image--left"
             src="img/before-small-cat.png"
             width="280px"
             height="232px"
             alt="Кот Борис до"
           />
           <img
-            class="page-main__cat-slider-image page-main__cat-slider-image--right"
+            class="cat-slider__image cat-slider__image--right visually-hidden"
             src="img/after-small-cat.png"
             width="280px"
             height="232px"
             alt="Кот Борис после"
           />
-          <button class="page-main__cat-slider-button--left" type="button">
-            Было
-          </button>
-          <button class="page-main__cat-slider-button--right" type="button">
-            Стало
-          </button>
+        </div>
+        <div class="cat-slider__buttons-wrapper switcher">
+          <button class="switcher__button--left" type="button">Было</button>
+          <button class="switcher__button--right" type="button">Стало</button>
         </div>
       </section>
-      <section class="page-main__address">
-        <h2 class="page-main__address-title">
+
+      <footer class="page-main__footer address">
+        <h2 class="visually-hidden">Адрес магазина</h2>
+        <p class="address__title">
           Приглашаем<br />к сотрудничеству<br />
           дилеров!
-        </h2>
-        <p class="page-main__address-description">
+        </p>
+        <p class="address__description">
           ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
         </p>
         <img
-          class="page-main__address-image"
+          class="address__image"
           src="img/map.jpg"
           width="320px"
           height="362px"
           alt="Карта местонахождения магазина"
         />
-      </section>
+      </footer>
     </main>
-    <footer class="page-footer">
-      <a class="page-footer__logo" href="#">
+
+    <footer class="page__footer page-footer">
+      <a class="page-footer__logo logo" href="#">
         <img
+          class="logo__name"
           src="img/logo-small-name.svg"
           width="128px"
           height="24px"
@@ -186,9 +185,9 @@
         />
       </a>
 
-      <ul class="page-footer__social-list">
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Вконтакте</span>
             <svg
               width="23"
@@ -204,8 +203,8 @@
             </svg>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Инстаграм</span>
             <svg
               width="16"
@@ -228,8 +227,8 @@
             </svg>
           </a>
         </li>
-        <li class="page-footer__social-item">
-          <a class="page-footer__social-link" href="#">
+        <li class="social__item">
+          <a class="social__link" href="#">
             <span class="visually-hidden">Фейсбук</span>
             <svg
               width="22"

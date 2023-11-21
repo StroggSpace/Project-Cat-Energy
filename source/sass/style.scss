@@ -1,4 +1,20 @@
-// Начните писать стили здесь
-body {
-  background: tomato;
-}
+// Подключение шрифтов и переменных
+@import url(/source/sass/fonts.scss);
+@import url(/source/sass/variables.scss);
+
+// Стили проекта
+@import url(/source/sass/blocks/adress.scss);
+@import url(/source/sass/blocks/advantages.scss);
+@import url(/source/sass/blocks/button.scss);
+@import url(/source/sass/blocks/cat-slider.scss);
+@import url(/source/sass/blocks/catalog-options.scss);
+@import url(/source/sass/blocks/logo.scss);
+@import url(/source/sass/blocks/page-footer.scss);
+@import url(/source/sass/blocks/page-header.scss);
+@import url(/source/sass/blocks/page-main.scss);
+@import url(/source/sass/blocks/page.scss);
+@import url(/source/sass/blocks/program.scss);
+@import url(/source/sass/blocks/site-nav.scss);
+@import url(/source/sass/blocks/social.scss);
+@import url(/source/sass/blocks/switcher.scss);
+@import url(/source/sass/blocks/visually-hidden.scss);
