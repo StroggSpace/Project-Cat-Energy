@@ -1,0 +1,7 @@
+.social {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}

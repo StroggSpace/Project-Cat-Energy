@@ -1,0 +1,41 @@
+.optionally {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.optionally__title {
+  color: $basic-black;
+  text-align: center;
+  font-family: $font-header;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.optionally__list {
+  @include list-reset;
+}
+
+.optionally__position-title {
+  color: $color-gray-6;
+
+  text-align: center;
+  font-family: $font-header;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+
+.optionally__description-item {
+  color: $color-gray-5;
+  text-align: center;
+  font-family: $font-body;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+}
+

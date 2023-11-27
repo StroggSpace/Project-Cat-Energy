@@ -1,0 +1,49 @@
+.catalog {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.catalog__show-more {
+  font-family: $font-header;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin: 0;
+
+  color: $color-gray-7;
+}
+
+.catalog__slim-text {
+  color: $color-gray-5;
+
+  text-align: center;
+  font-family: $font-body;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.catalog__gift-info {
+  width: 280px;
+  height: 290px;
+
+  background-image: url("../img/catalog/cat-gift.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $basic-green;
+  background-blend-mode: soft-light;
+}
+
+.catalog__gift-info-text {
+  color: $basic-white;
+  text-align: center;
+  font-family: $font-body;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}

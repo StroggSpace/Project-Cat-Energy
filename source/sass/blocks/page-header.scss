@@ -1,0 +1,11 @@
+.page-header {
+  background-color: $basic-white;
+}
+
+.page-header__container {
+  height: 66px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

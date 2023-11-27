@@ -1,0 +1,12 @@
+.button {
+  @include a-reset;
+  @include base-font-style;
+  font-family: $font-header;
+  text-transform: uppercase;
+
+  color: $basic-white;
+  background-color: $basic-green;
+
+  margin: 0 20px 40px 20px;
+  padding: 8px 0px 8px 0px;
+}

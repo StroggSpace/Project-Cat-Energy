@@ -1,20 +1,32 @@
 // Подключение шрифтов и переменных
-@import url(/source/sass/fonts.scss);
-@import url(/source/sass/variables.scss);
+@import "./fonts.scss";
+@import "./variables.scss";
+
+// Подключение миксинов
+@import "./mixins.scss";
 
 // Стили проекта
-@import url(/source/sass/blocks/adress.scss);
-@import url(/source/sass/blocks/advantages.scss);
-@import url(/source/sass/blocks/button.scss);
-@import url(/source/sass/blocks/cat-slider.scss);
-@import url(/source/sass/blocks/catalog-options.scss);
-@import url(/source/sass/blocks/logo.scss);
-@import url(/source/sass/blocks/page-footer.scss);
-@import url(/source/sass/blocks/page-header.scss);
-@import url(/source/sass/blocks/page-main.scss);
-@import url(/source/sass/blocks/page.scss);
-@import url(/source/sass/blocks/program.scss);
-@import url(/source/sass/blocks/site-nav.scss);
-@import url(/source/sass/blocks/social.scss);
-@import url(/source/sass/blocks/switcher.scss);
-@import url(/source/sass/blocks/visually-hidden.scss);
+@import "./blocks/address.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/button.scss";
+@import "./blocks/cat-slider.scss";
+@import "./blocks/catalog-options.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/page-main.scss";
+@import "./blocks/page.scss";
+@import "./blocks/program.scss";
+@import "./blocks/site-nav.scss";
+@import "./blocks/social.scss";
+@import "./blocks/switcher.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/card.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/optionally.scss";
+@import "./blocks/cat-data.scss";
+@import "./blocks/program-data.scss";
+@import "./blocks/comment.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/form.scss";
+@import "./blocks/optionally-staff.scss";

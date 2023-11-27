@@ -1,0 +1,11 @@
+.optionally-staff {
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.optionally-staff__label {
+  color: $basic-black;
+}

@@ -1,0 +1,33 @@
+.advantages {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.advantages__title {
+  @include head-font-style;
+}
+
+.advantages__list {
+  @include list-reset;
+}
+
+.advantages__item {
+  display: flex;
+  gap: 20px;
+  flex-shrink: 0;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 60px;
+    height: 60px;
+
+    background-color: $basic-green;
+
+    flex-shrink: 0;
+  }
+}
+
+.advantages__description {
+  color: $color-gray-5;
+}

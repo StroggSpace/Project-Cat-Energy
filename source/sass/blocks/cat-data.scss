@@ -1,0 +1,26 @@
+.cat-data {
+  border: none;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-data__label {
+  color: $color-gray-5;
+  font-family: $font-header;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.cat-data__input {
+  color: $color-gray-5;
+  font-family: $font-header;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+}
