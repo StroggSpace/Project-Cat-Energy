@@ -34,10 +34,6 @@
 
 .address__description {
   color: #444444;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
 }
 
@@ -60,6 +56,19 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+@media (min-width: 768px) {
+  .advantages__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    row-gap: 30px;
+  }
+}
+@media (min-width: 768px) and (min-width: 1440px) {
+  .advantages__list {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .advantages__item {
@@ -102,8 +111,19 @@
 }
 
 .cat-slider__wrapper {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (min-width: 768px) {
+  .cat-slider__wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1440px) {
+  .cat-slider__wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .cat-slider__list {
@@ -116,10 +136,7 @@
   margin: 0;
   color: #444444;
   text-align: center;
-  font-family: "Arial", sans-serif;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 12px;
 }
 
@@ -132,6 +149,23 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+  grid-column: 1/-1;
+}
+@media (min-width: 768px) {
+  .cat-slider__price {
+    grid-column: 3/4;
+  }
+}
+@media (min-width: 1440px) {
+  .cat-slider__price {
+    grid-column: 1/3;
+  }
+}
+
+.cat-slider__adaptive {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-options {
@@ -140,10 +174,22 @@
   flex-wrap: wrap;
   row-gap: 20px;
 }
+@media (min-width: 1440px) {
+  .catalog-options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 .catalog-options__item {
   background-color: #f2f2f2;
   padding: 22px;
+}
+@media (min-width: 768px) {
+  .catalog-options__item {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .catalog-options__title {
@@ -181,6 +227,12 @@
   margin: 0;
   margin-bottom: 24px;
 }
+@media (min-width: 768px) {
+  .catalog-options__description {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+}
 
 .catalog-options__link {
   text-decoration: none;
@@ -192,11 +244,22 @@
   line-height: 16px;
   color: #000000;
 }
+@media (min-width: 768px) {
+  .catalog-options__link {
+    grid-row: 3/4;
+  }
+}
 
 .page-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 768px) {
+  .page-footer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__copyright-wrapper {
@@ -209,8 +272,6 @@
   color: #444444;
   font-family: "Arial", sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: normal;
 }
 
@@ -224,13 +285,41 @@
   justify-content: space-between;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .page-header__container {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-width: 768px) {
+  .page-header__nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
 
 .page {
   width: 320px;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .page {
+    width: 768px;
+  }
+}
+@media (min-width: 1440px) {
+  .page {
+    width: 1440px;
+  }
+}
 
 .page__body {
+  color: #222222;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
   margin: 0;
   background-color: #ffffff;
 }
@@ -240,21 +329,6 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  background-image: url("../img/index-background-program.png");
-  background-repeat: no-repeat;
-  background-position: top;
-  opacity: 0.85;
-}
-.program::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 302px;
-  background-color: #68b738;
-  z-index: -1;
-  opacity: 0.85;
 }
 
 .program__title {
@@ -267,10 +341,19 @@
   margin-top: 27px;
   margin-bottom: 20px;
 }
+@media (min-width: 768px) {
+  .program__title {
+    color: #000000;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60px;
+  }
+}
 
 .program__description {
   color: #ffffff;
   font-family: "Oswald", "Arial", sans-serif;
+  text-align: center;
   font-size: 14px;
   font-weight: 400;
   line-height: 14px;
@@ -279,10 +362,28 @@
   margin-bottom: 27px;
   margin-top: 0;
 }
+@media (min-width: 768px) {
+  .program__description {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
 
 .program__button {
   align-self: stretch;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .program__container {
+    width: 320px;
+    height: 302px;
+    background-image: url("../img/index-background-program.png");
+    background-repeat: no-repeat;
+    background-color: #68b738;
+    background-blend-mode: soft-light;
+  }
 }
 
 .site-nav {
@@ -295,6 +396,11 @@
   justify-content: space-around;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .site-nav {
+    flex-direction: row;
+  }
+}
 
 .site-nav__item {
   height: 66px;
@@ -302,6 +408,12 @@
   display: flex;
   justify-content: space-around;
   border-top: 1px solid #e6e6e6;
+}
+@media (min-width: 768px) {
+  .site-nav__item {
+    width: auto;
+    border-top: none;
+  }
 }
 
 .site-nav__link {
@@ -354,10 +466,7 @@
 .card__definition-block {
   color: #444444;
   text-align: center;
-  font-family: "Arial", sans-serif;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 16px;
 }
 
@@ -381,10 +490,7 @@
 .catalog__slim-text {
   color: #444444;
   text-align: center;
-  font-family: "Arial", sans-serif;
   font-size: 12px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 16px;
 }
 
@@ -401,10 +507,7 @@
 .catalog__gift-info-text {
   color: #ffffff;
   text-align: center;
-  font-family: "Arial", sans-serif;
   font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 20px;
 }
 
@@ -443,10 +546,6 @@
 .optionally__description-item {
   color: #444444;
   text-align: center;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 14px;
 }
 
@@ -529,10 +628,6 @@
 .form__text {
   color: #000000;
   text-align: center;
-  font-family: "Arial", sans-serif;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 16px;
 }
 

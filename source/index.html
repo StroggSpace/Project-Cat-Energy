@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Cat Energy</title>
   </head>
@@ -52,11 +53,13 @@
 
     <main class="page__main page-main">
       <section class="page-main__header program">
-        <h1 class="program__title">
-          Функциональное<br />
-          питание для котов
-        </h1>
-        <p class="program__description">Занялся собой? Займись котом!</p>
+        <div class="program__container">
+          <h1 class="program__title">
+            Функциональное<br />
+            питание для котов
+          </h1>
+          <p class="program__description">Занялся собой? Займись котом!</p>
+        </div>
         <img class="program__image" src="img/demo-product-img.png" width: 280px
         height: 270px alt="Cat Energy PRO с курицей - демонстрационное
         изображение">
@@ -123,38 +126,43 @@
           Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
           этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <div class="cat-slider__wrapper">
-          <dl class="cat-slider__list">
-            <dt class="cat-slider__title"><b>5 кг</b></dt>
-            <dd class="cat-slider__definition">Снижение веса</dd>
-          </dl>
+        <div class="cat-slider__adaptive">
+          <div class="cat-slider__wrapper">
+            <dl class="cat-slider__list">
+              <dt class="cat-slider__title"><b>5 кг</b></dt>
+              <dd class="cat-slider__definition">Снижение веса</dd>
+            </dl>
 
-          <dl class="cat-slider__list">
-            <dt class="cat-slider__title"><b>60 дней</b></dt>
-            <dd class="cat-slider__definition">Затрачено времени</dd>
-          </dl>
-        </div>
+            <dl class="cat-slider__list">
+              <dt class="cat-slider__title"><b>60 дней</b></dt>
+              <dd class="cat-slider__definition">Затрачено времени</dd>
+            </dl>
 
-        <p class="cat-slider__price">Затраты на питание: 15 000 руб.</p>
+            <p class="cat-slider__price">Затраты на питание: 15 000 руб.</p>
+          </div>
+          <div class="cat-slider__main">
+            <img
+              class="cat-slider__image cat-slider__image--left"
+              src="img/before-small-cat.png"
+              width="280px"
+              height="232px"
+              alt="Кот Борис до"
+            />
+            <img
+              class="cat-slider__image cat-slider__image--right visually-hidden"
+              src="img/after-small-cat.png"
+              width="280px"
+              height="232px"
+              alt="Кот Борис после"
+            />
 
-        <img
-          class="cat-slider__image cat-slider__image--left"
-          src="img/before-small-cat.png"
-          width="280px"
-          height="232px"
-          alt="Кот Борис до"
-        />
-        <img
-          class="cat-slider__image cat-slider__image--right visually-hidden"
-          src="img/after-small-cat.png"
-          width="280px"
-          height="232px"
-          alt="Кот Борис после"
-        />
-
-        <div class="cat-slider__buttons-wrapper switcher">
-          <button class="switcher__button--left" type="button">Было</button>
-          <button class="switcher__button--right" type="button">Стало</button>
+            <div class="cat-slider__buttons-wrapper switcher">
+              <button class="switcher__button--left" type="button">Было</button>
+              <button class="switcher__button--right" type="button">
+                Стало
+              </button>
+            </div>
+          </div>
         </div>
       </section>
 
