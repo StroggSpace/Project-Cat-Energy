@@ -24,7 +24,15 @@
   line-height: 16px;
 }
 
-.form__wrapper {
+.form__wrapper--top {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.form__wrapper--bottom {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
