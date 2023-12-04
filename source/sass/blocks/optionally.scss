@@ -3,6 +3,15 @@
   padding-right: 20px;
 }
 
+.optionally__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
 .optionally__title {
   color: $basic-black;
   text-align: center;
@@ -17,6 +26,11 @@
   @include list-reset;
 }
 
+.optionally__item {
+  display: grid;
+  grid-template-columns: auto;
+}
+
 .optionally__position-title {
   color: $color-gray-6;
 
@@ -29,9 +43,55 @@
   text-transform: uppercase;
 }
 
-.optionally__description-item {
+.optionally__description,
+.optionally__description-price {
   color: $color-gray-5;
   text-align: center;
   line-height: 14px;
 }
 
+.optionally__description {
+  grid-column: 1/2;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/3;
+  }
+}
+
+.optionally__description-price {
+  grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 3/4;
+  }
+}
+
+.optionally__button {
+  grid-column: 1/3;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/4;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 4/5;
+  }
+}
+
+.optionally__gift-info {
+  width: 280px;
+  height: 290px;
+
+  background-image: url("../img/catalog/cat-gift.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $basic-green;
+  background-blend-mode: soft-light;
+}
+
+.optionally__gift-info-text {
+  color: $basic-white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+}

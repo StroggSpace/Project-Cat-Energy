@@ -2,6 +2,18 @@
   border: none;
 }
 
+.contacts__wrapper {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contacts__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .contacts__header {
   color: $basic-black;
   font-family: $font-header;

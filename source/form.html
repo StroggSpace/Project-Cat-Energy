@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Cat Energy</title>
   </head>
@@ -61,104 +62,108 @@
           программу питания для вашего кота
         </p>
 
-        <fieldset class="form__cat-data cat-data">
-          <legend class="visually-hidden">Информация о коте</legend>
-          <label>
-            <span class="cat-data__label">Имя:*</span>
-            <input
-              class="cat-data__input"
-              type="text"
-              name="name"
-              placeholder="Барсик"
-              required
-            />
-          </label>
+        <div class="form__wrapper">
+          <fieldset class="form__cat-data cat-data">
+            <legend class="visually-hidden">Информация о коте</legend>
+            <label class="cat-data__item">
+              <span class="cat-data__label">Имя:*</span>
+              <input
+                class="cat-data__input"
+                type="text"
+                name="name"
+                placeholder="Барсик"
+                required
+              />
+            </label>
 
-          <label>
-            <span class="cat-data__label">Вес (кг):*</span>
-            <input
-              class="cat-data__input"
-              type="number"
-              name="weight"
-              placeholder="7"
-              required
-            />
-          </label>
+            <label class="cat-data__item">
+              <span class="cat-data__label">Вес (кг):*</span>
+              <input
+                class="cat-data__input"
+                type="number"
+                name="weight"
+                placeholder="7"
+                required
+              />
+            </label>
 
-          <label>
-            <span class="cat-data__label">Возраст (лет):</span>
-            <input
-              class="cat-data__input"
-              type="number"
-              name="age"
-              placeholder="7"
-            />
-          </label>
-        </fieldset>
+            <label class="cat-data__item">
+              <span class="cat-data__label">Возраст (лет):</span>
+              <input
+                class="cat-data__input"
+                type="number"
+                name="age"
+                placeholder="7"
+              />
+            </label>
+          </fieldset>
 
-        <fieldset class="form__program-data program-data cat-data__label">
-          <legend class="visually-hidden">Выбор программы</legend>
-          <label>
-            <span class="program-data__label">Похудение</span>
-            <input
-              class="program-data__input"
-              type="radio"
-              name="program"
-              value="похудение"
-              checked
-            />
-            <span class="program-data__radio-icon"></span>
-          </label>
+          <fieldset class="form__program-data program-data cat-data__label">
+            <legend class="visually-hidden">Выбор программы</legend>
+            <label class="program-data__item">
+              <span class="program-data__label">Похудение</span>
+              <input
+                class="program-data__input"
+                type="radio"
+                name="program"
+                value="похудение"
+                checked
+              />
+              <span class="program-data__radio-icon"></span>
+            </label>
 
-          <label>
-            <span class="program-data__label">Набор массы</span>
-            <input
-              class="program-data__input"
-              type="radio"
-              name="program"
-              value="набор массы"
-            />
-            <span class="program-data__radio-icon"></span>
-          </label>
+            <label class="program-data__item">
+              <span class="program-data__label">Набор массы</span>
+              <input
+                class="program-data__input"
+                type="radio"
+                name="program"
+                value="набор массы"
+              />
+              <span class="program-data__radio-icon"></span>
+            </label>
 
-          <label>
-            <span class="program-data__label">Не знаю (нужен ваш совет)</span>
-            <input
-              class="program-data__input"
-              type="radio"
-              name="program"
-              value="консультация"
-            />
-          </label>
-        </fieldset>
+            <label class="program-data__item">
+              <span class="program-data__label">Не знаю (нужен ваш совет)</span>
+              <input
+                class="program-data__input"
+                type="radio"
+                name="program"
+                value="консультация"
+              />
+            </label>
+          </fieldset>
+        </div>
 
         <fieldset class="form__contacts contacts">
           <legend class="contacts__header">
             Контактные данные<br />(владельца кота)
           </legend>
-          <label>
-            <span class="contacts__label cat-data__label">E-mail:*</span>
-            <input
-              class="contacts__input cat-data__input"
-              type="email"
-              name="email"
-              placeholder="kuklachev@gmail.com"
-              required
-            />
-            <span class="contacts__input-icon"></span>
-          </label>
+          <div class="contacts__wrapper">
+            <label class="contacts__item">
+              <span class="contacts__label cat-data__label">E-mail:*</span>
+              <input
+                class="contacts__input cat-data__input"
+                type="email"
+                name="email"
+                placeholder="kuklachev@gmail.com"
+                required
+              />
+              <span class="contacts__input-icon"></span>
+            </label>
 
-          <label>
-            <span class="contacts__label cat-data__label">Телефон:*</span>
-            <input
-              class="contacts__input cat-data__input"
-              type="tel"
-              name="phone"
-              placeholder="8 (960) 900-60-90"
-              required
-            />
-            <span class="contacts__input-icon"></span>
-          </label>
+            <label class="contacts__item">
+              <span class="contacts__label cat-data__label">Телефон:*</span>
+              <input
+                class="contacts__input cat-data__input"
+                type="tel"
+                name="phone"
+                placeholder="8 (960) 900-60-90"
+                required
+              />
+              <span class="contacts__input-icon"></span>
+            </label>
+          </div>
         </fieldset>
 
         <fieldset class="form__comment comment">
@@ -172,7 +177,7 @@
 
         <fieldset class="form__optionally optionally-staff">
           <legend class="contacts__header">Дополнительно</legend>
-          <label>
+          <label class="optionally__item">
             <span class="optionally-staff__label cat-data__label"
               >Сахарозаменитель</span
             >
@@ -185,7 +190,7 @@
             <span class="optionally-staff__checkbox-icon"></span>
           </label>
 
-          <label>
+          <label class="optionally__item">
             <span class="optionally-staff__label cat-data__label"
               >Питьевая вода</span
             >
@@ -197,7 +202,7 @@
             <span class="optionally-staff__checkbox-icon"></span>
           </label>
 
-          <label>
+          <label class="optionally__item">
             <span class="optionally-staff__label cat-data__label">Молоко</span>
             <input
               class="optionally-staff__checkbox"
@@ -207,7 +212,7 @@
             <span class="optionally-staff__checkbox-icon"></span>
           </label>
 
-          <label>
+          <label class="optionally__item">
             <span class="optionally-staff__label cat-data__label"
               >Витамины</span
             >
@@ -220,11 +225,13 @@
           </label>
         </fieldset>
 
-        <button class="optionally-staff__button button" type="submit">
-          Отправить заявку
-        </button>
+        <div class="form__wrapper">
+          <button class="optionally-staff__button button" type="submit">
+            Отправить заявку
+          </button>
 
-        <p class="form__text">* — Обязательные поля</p>
+          <p class="form__text">* — Обязательные поля</p>
+        </div>
       </form>
 
       <footer class="page-main__footer address">

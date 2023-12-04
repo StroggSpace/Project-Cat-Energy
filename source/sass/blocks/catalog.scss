@@ -3,6 +3,17 @@
   padding-right: 20px;
 }
 
+.catalog__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 .catalog__show-more {
   font-family: $font-header;
   text-align: center;
@@ -24,20 +35,4 @@
   line-height: 16px;
 }
 
-.catalog__gift-info {
-  width: 280px;
-  height: 290px;
 
-  background-image: url("../img/catalog/cat-gift.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: $basic-green;
-  background-blend-mode: soft-light;
-}
-
-.catalog__gift-info-text {
-  color: $basic-white;
-  text-align: center;
-  font-size: 16px;
-  line-height: 20px;
-}
