@@ -1,0 +1,28 @@
+.switcher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.switcher__button {
+  @include reset-button;
+
+  color: $basic-black;
+
+  font-family: $font-header;
+  font-size: 16px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.switcher__slider {
+  background-image: url("../img/slider-mini.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  width: 86px;
+  height: 14px;
+}

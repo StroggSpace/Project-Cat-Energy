@@ -5,6 +5,10 @@
 
 .advantages__title {
   @include head-font-style;
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
 }
 
 .advantages__list {
@@ -23,22 +27,45 @@
 }
 
 .advantages__item {
-  display: flex;
+  display: grid;
+  grid-template-columns: 60px 1fr;
   gap: 20px;
-  flex-shrink: 0;
   align-items: center;
 
-  &::before {
-    content: "";
-    width: 60px;
-    height: 60px;
-
-    background-color: $basic-green;
-
-    flex-shrink: 0;
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 }
 
 .advantages__description {
   color: $color-gray-5;
+}
+
+.advantages__icon {
+  display: inline-block;
+
+  background-color: $basic-green;
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
+
+  width: 60px;
+  height: 60px;
+}
+
+.advantages__icon--leaf {
+  background-image: url("../img/leaf-icon.svg");
+}
+
+.advantages__icon--tub {
+  background-image: url("../img/tub-icon.svg");
+}
+
+.advantages__icon--eat {
+  background-image: url("../img/eat-icon.svg");
+}
+
+.advantages__icon--alarm {
+  background-image: url("../img/alarm-icon.svg");
 }

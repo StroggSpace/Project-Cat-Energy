@@ -1,5 +1,12 @@
 .page-header {
-  background-color: $basic-white;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  position: relative;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 111px;
+  }
 }
 
 .page-header__container {
@@ -18,5 +25,38 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 2fr;
+  }
+}
+
+.page-header__container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.page-header__toggle {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 16px;
+  cursor: pointer;
+  border: none;
+  z-index: 2;
+  background-color: transparent;
+}
+
+.page-header__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 5px 0 0 $basic-black, 0 10px 0 0 $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__toggle {
+    display: none;
   }
 }

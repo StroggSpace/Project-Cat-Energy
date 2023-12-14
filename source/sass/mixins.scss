@@ -5,6 +5,13 @@
   list-style-type: none;
 }
 
+@mixin reset-button {
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
 @mixin a-reset {
   text-decoration: none;
 }

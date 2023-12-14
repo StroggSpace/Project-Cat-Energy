@@ -10,6 +10,17 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
   }
+
+  @media (min-width: $desktop-width) {
+    justify-content: flex-end;
+    gap: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-nav--closed {
+    display: none;
+  }
 }
 
 .site-nav__item {
@@ -40,4 +51,14 @@
   line-height: 20px;
 
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
+}
+
+.site-nav__link--black {
+  @media (min-width: $desktop-width) {
+    color: $basic-black;
+  }
 }
