@@ -6,19 +6,18 @@
 @import "./mixins.scss";
 
 // Стили проекта
+@import "./blocks/global.scss";
 @import "./blocks/address.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/button.scss";
 @import "./blocks/cat-slider.scss";
 @import "./blocks/catalog-options.scss";
-@import "./blocks/logo.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/page-header.scss";
 @import "./blocks/page-main.scss";
 @import "./blocks/page.scss";
 @import "./blocks/program.scss";
 @import "./blocks/site-nav.scss";
-@import "./blocks/social.scss";
 @import "./blocks/switcher.scss";
 @import "./blocks/visually-hidden.scss";
 @import "./blocks/card.scss";

@@ -4,21 +4,26 @@
   flex-wrap: wrap;
   row-gap: 20px;
 
+  min-width: 280px;
+  margin: 0 20px;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
   }
 }
 
 .catalog-options__item {
   background-color: $basic-gray;
 
-  min-width: 280px;
-  min-height: 266px;
-  padding: 22px;
+  padding: 24px 20px 20px;
+  align-items: center;
 
   display: grid;
   grid-template-columns: 1fr 4fr;
+  row-gap: 20px;
+  column-gap: 20px;
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     grid-template-columns: 2fr 1fr;
@@ -39,10 +44,14 @@
 
   color: $basic-black;
 
-  margin: 0;
-  margin-bottom: 24px;
+  margin: auto 0;
 
   grid-column: 2/3;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     grid-column: 1/2;
@@ -124,6 +133,11 @@
   grid-column: 1/-1;
   grid-row: 2/3;
 
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   @media (min-width: $tablet-width) and (max-width: 1439px) {
     grid-column: 1/2;
   }
@@ -131,6 +145,7 @@
 
 .catalog-options__link {
   @include a-reset;
+  position: relative;
 
   font-family: $font-header;
   text-transform: uppercase;
@@ -143,4 +158,26 @@
 
   grid-column: 1/-1;
   grid-row: 3/4;
+
+  padding-top: 15px;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    margin-left: 15px;
+
+    background-image: url("../img/arrow-icon.svg");
+    width: 32px;
+    height: 10px;
+  }
+
+  @media (max-width: 767px) {
+    border-top: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: normal;
+  }
 }

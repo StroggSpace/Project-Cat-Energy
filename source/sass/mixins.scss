@@ -27,7 +27,6 @@
 
 @mixin head-font-style {
   color: $basic-black;
-  text-align: center;
   font-family: $font-header;
   font-size: 36px;
   font-style: normal;
@@ -43,4 +42,11 @@
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
+
+  margin: 0;
+}
+
+@mixin fieldset-reset {
+  margin: 0;
+  padding: 0;
 }

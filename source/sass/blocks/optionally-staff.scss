@@ -1,18 +1,26 @@
 .optionally-staff {
-  border: none;
+  @include fieldset-reset;
 
+  border: none;
+}
+
+.optionally-staff__label {
+  color: $basic-black;
+}
+
+.optionally-staff__wrapper {
   display: grid;
   grid-template-columns: 1fr;
+  row-gap: 15px;
+
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
   }
-}
-
-.optionally-staff__label {
-  color: $basic-black;
 }

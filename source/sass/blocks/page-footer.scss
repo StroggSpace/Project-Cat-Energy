@@ -1,7 +1,7 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 0 20px;
 
   background-color: $basic-gray;
 
@@ -12,29 +12,51 @@
 }
 
 .page-footer__logo {
-  height: 95px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 39px 0 32px 0;
+
+  border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-start;
+    width: fit-content;
+  }
 }
 
 .page-footer__social {
-  height: 63px;
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+
+  padding: 24px 0;
+
+  border-bottom: 1px solid #d9d9d9;
 }
 
 .page-footer__copyright-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   width: 100%;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     width: fit-content;
+    gap: 20px;
   }
 }
 
 .page-footer__copyright {
   @include a-reset;
 
-  height: 78px;
+  padding: 22px 0;
 
   color: $color-gray-5;
   font-family: $font-body;

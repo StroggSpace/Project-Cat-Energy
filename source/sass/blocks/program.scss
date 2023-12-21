@@ -4,8 +4,11 @@
   align-items: center;
   position: relative;
 
+  margin-bottom: 20px;
+
   @media (min-width: $tablet-width) {
     margin-bottom: 526px;
+    align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,7 +53,7 @@
       background-blend-mode: soft-light;
 
       position: absolute;
-      top: -177px;
+      top: -260px;
       right: 0;
       width: 720px;
       height: 696px;
@@ -69,7 +72,6 @@
   text-align: center;
 
   margin-top: 27px;
-  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
@@ -77,6 +79,8 @@
     font-weight: 400;
     line-height: 60px;
     text-align: start;
+
+    margin-bottom: 40px;
   }
 }
 
@@ -91,8 +95,7 @@
   font-style: normal;
   text-transform: uppercase;
 
-  margin-bottom: 27px;
-  margin-top: 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
@@ -104,7 +107,7 @@
 
 .program__image {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
 
   @media (min-width: $tablet-width) {
     width: 709px;
@@ -119,11 +122,12 @@
     height: 499px;
 
     top: -60px;
+    left: 40%;
   }
 }
 
 .program__button {
-  align-self: stretch;
+  width: 280px;
   text-align: center;
 
   @media (min-width: $tablet-width) {

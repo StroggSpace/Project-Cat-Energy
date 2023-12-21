@@ -1,6 +1,16 @@
 .cat-slider {
-  @media (max-width: 767px) {
-    background-color: $basic-gray;
+  background-color: #eaeaea;
+
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to top, #eaeaea 400px, #ffffff 400px);
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 436px 1fr;
+    column-gap: 194px;
   }
 }
 
@@ -14,12 +24,14 @@
     grid-template-columns: 162px 162px 1fr 174px;
     gap: 42px;
 
-    margin-bottom: 250px;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(2, 1fr);
     width: 436px;
+
+    grid-column: 1/2;
   }
 }
 
@@ -64,7 +76,7 @@
   width: min-content;
 
   color: $color-gray-5;
-  background-color: $basic-gray;
+  background-color: #eaeaea;
 
   text-align: center;
   font-size: 12px;
@@ -80,6 +92,11 @@
     padding: 0 7px 0 7px;
 
     background-color: $basic-white;
+  }
+}
+
+.cat-slider__description {
+  @media (min-width: $desktop-width) {
   }
 }
 
@@ -109,28 +126,53 @@
   }
 }
 
-.cat-slider__adaptive {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+.cat-slider__main {
+  width: 100%;
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-gray;
+    width: 592px;
+
+    grid-row: 1/4;
+    grid-column: 2/3;
   }
 }
 
-.cat-slider__main {
-  @media (min-width: $tablet-width) {
-    background-color: $basic-gray;
-    width: 100%;
+.cat-slider__images {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 50% 1fr;
+    padding: 0 70px;
   }
 
   @media (min-width: $desktop-width) {
-    width: fit-content;
+    padding: 0;
+  }
+}
+
+.cat-slider__image {
+  @media (min-width: $tablet-width) {
+    overflow: hidden;
+
+    display: flex;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 594px;
+      height: 511px;
+      max-width: none;
+    }
   }
 }
 
 .cat-slider__image--right {
+  @media (min-width: $tablet-width) {
+    justify-content: end;
+  }
+
   @media (max-width: 767px) {
     display: none;
   }

@@ -1,7 +1,11 @@
 .comment {
+  @include fieldset-reset;
+
   border: none;
 }
 
 .comment__textarea {
   width: 100%;
+  height: 150px;
+  margin-bottom: 25px;
 }

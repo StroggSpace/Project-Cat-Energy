@@ -6,8 +6,11 @@
 .advantages__title {
   @include head-font-style;
 
+  text-align: start;
+
   @media (min-width: $tablet-width) {
-    text-align: start;
+    font-size: 60px;
+    line-height: 60px;
   }
 }
 
@@ -17,8 +20,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
-    row-gap: 30px;
+    column-gap: 154px;
+    row-gap: 37px;
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
@@ -32,14 +35,40 @@
   gap: 20px;
   align-items: center;
 
+  position: relative;
+
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 0;
+
+    counter-increment: process;
+  }
+
+  &::after {
+    @media (min-width: $tablet-width) {
+      content: counter(process);
+      position: absolute;
+      top: -40px;
+      right: 0;
+      z-index: -1;
+      color: #f2f2f2;
+      font-family: "Oswald", "Arial", sans-serif;
+      font-size: 280px;
+      line-height: 1;
+    }
   }
 }
 
 .advantages__description {
   color: $color-gray-5;
+
+  @media (min-width: $tablet-width) {
+    color: $color-gray-5;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .advantages__icon {
@@ -52,6 +81,13 @@
 
   width: 60px;
   height: 60px;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 80px;
+
+    margin-bottom: 31px;
+  }
 }
 
 .advantages__icon--leaf {

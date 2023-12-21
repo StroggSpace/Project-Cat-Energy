@@ -1,7 +1,15 @@
 .program-data {
+  @include fieldset-reset;
+
   color: $color-gray-6;
   border: none;
 
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  gap: 14px;
+
+  padding-bottom: 24px;
+  border-bottom: 1px solid $color-gray-3;
+  margin-bottom: 22px;
 }
