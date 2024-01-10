@@ -4,13 +4,22 @@
   flex-wrap: wrap;
   row-gap: 20px;
 
-  min-width: 280px;
-  margin: 0 20px;
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin-bottom: 45px;
+  }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 20px;
+    column-gap: 80px;
+
+    width: 1220px;
+    margin-bottom: 71px;
   }
 }
 
@@ -25,10 +34,18 @@
   row-gap: 20px;
   column-gap: 20px;
 
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
-    grid-template-columns: 2fr 1fr;
+  @media (min-width: $tablet-width) and (max-width: 1299px) {
+    grid-template-columns: 340px 1fr;
+    gap: 0;
 
     padding: 77px 62px 57px 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 47px 52px 59px 52px;
+
+    column-gap: 62px;
+    row-gap: 39px;
   }
 }
 
@@ -51,10 +68,16 @@
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
+
+    margin-bottom: 24px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
+  @media (min-width: $tablet-width) and (max-width: 1299px) {
     grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: auto 0;
   }
 }
 
@@ -70,7 +93,7 @@
   grid-column: 1/2;
   grid-row: 1/2;
 
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
+  @media (min-width: $tablet-width) and (max-width: 1299px) {
     grid-column: 2/3;
     grid-row: 1/4;
 
@@ -78,6 +101,7 @@
     height: 200px;
 
     align-self: center;
+    justify-self: end;
   }
 
   @media (min-width: $desktop-width) {
@@ -117,8 +141,8 @@
     top: 50%;
     transform: translate(-50%, -50%);
 
-    width: 110%;
-    height: 110%;
+    width: 130%;
+    height: 130%;
   }
 }
 
@@ -128,7 +152,6 @@
   color: $color-gray-5;
 
   margin: 0;
-  margin-bottom: 24px;
 
   grid-column: 1/-1;
   grid-row: 2/3;
@@ -136,10 +159,16 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+
+    margin-bottom: 48px;
   }
 
-  @media (min-width: $tablet-width) and (max-width: 1439px) {
+  @media (min-width: $tablet-width) and (max-width: 1299px) {
     grid-column: 1/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
@@ -167,9 +196,12 @@
     position: absolute;
     margin-left: 15px;
 
+    top: 50%;
+
     background-image: url("../img/arrow-icon.svg");
     width: 32px;
-    height: 10px;
+    height: 12px;
+    background-repeat: no-repeat;
   }
 
   @media (max-width: 767px) {
@@ -179,5 +211,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: normal;
+  }
+
+  &:hover::after {
+    background-image: url("../img/arrow-icon-hover.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

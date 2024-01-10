@@ -4,6 +4,79 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <title>HTML Academy: Cat Energy</title>
   </head>
   <body class="page__body">
@@ -40,7 +113,7 @@
               >Главная</a
             >
           </li>
-          <li class="site-nav__item site-nav__item--active">
+          <li class="site-nav__item site-nav__item--active-other">
             <a class="site-nav__link site-nav__link--black" href="#"
               >Каталог продукции</a
             >
@@ -55,9 +128,11 @@
     </header>
 
     <main class="page__main page-main">
+      <header class="page-main__header container">
+        <h1 class="page-main__title">Каталог продукции</h1>
+      </header>
       <section class="page-main__catalog catalog">
-        <h1 class="catalog__title">Каталог продукции</h1>
-        <div class="catalog__container">
+        <div class="catalog__container container">
           <article class="catalog__item card">
             <a class="card__link" href="#">
               <h2 class="card__link-title">Cat Energy Pro 500 г</h2>
@@ -268,26 +343,31 @@
             </a>
           </article>
 
-          <div class="catalog__show-more-wrapper">
-            <img
-              class="catalog__show-more-image"
-              src="../img/catalog/plus.svg"
-              alt="Дополнительные товары"
-            />
-            <p class="catalog__show-more">Показать еще 100500 товаров</p>
-            <slim class="catalog__slim-text"
-              >На самом деле вкусов гораздо больше!</slim
-            >
-            <button class="catalog__show-more-button button" type="button">
-              Показать все
-            </button>
+          <div class="catalog__show-more">
+            <div class="catalog__show-more-wrapper">
+              <img
+                class="catalog__show-more-image"
+                src="../img/catalog/plus.svg"
+                alt="Дополнительные товары"
+              />
+              <p class="catalog__show-more-description">
+                Показать еще 100500 товаров
+              </p>
+              <slim class="catalog__slim-text"
+                >На самом деле вкусов гораздо больше!</slim
+              >
+              <button class="catalog__show-more-button button" type="button">
+                Показать все
+              </button>
+            </div>
           </div>
         </div>
       </section>
 
       <section class="catalog__optionally optionally">
-        <h2 class="optionally__title">Дополнительные товары</h2>
-        <div class="optionally__wrapper">
+        <div class="optionally__wrapper container">
+          <h2 class="optionally__title">Дополнительные товары</h2>
+
           <ul class="optionally__list">
             <li class="optionally__item">
               <h3 class="optionally__position-title">Сахарозаменитель</h3>
@@ -347,9 +427,9 @@
         </div>
       </section>
 
-      <footer class="page-main__footer address">
+      <footer class="page-main__footer address address--back">
         <h2 class="visually-hidden">Адрес магазина</h2>
-        <div class="address__wrapper">
+        <div class="address__wrapper address__wrapper--back">
           <p class="address__title">
             Приглашаем<br />к сотрудничеству<br />
             дилеров!

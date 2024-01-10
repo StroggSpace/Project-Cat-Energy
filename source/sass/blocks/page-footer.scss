@@ -8,6 +8,14 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+
+    padding: 0 30px;
+
+    height: 147px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
   }
 }
 
@@ -50,6 +58,11 @@
     justify-content: flex-end;
     width: fit-content;
     gap: 20px;
+  }
+
+  &:active .page-footer__copyright,
+  &:active .page-footer__copyright-logo {
+    opacity: 0.3;
   }
 }
 

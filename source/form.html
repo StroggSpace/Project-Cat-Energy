@@ -4,6 +4,79 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="/favicons/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="/favicons/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="/favicons/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="/favicons/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="/favicons/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="/favicons/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="/favicons/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="/favicons/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicons/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="/favicons/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="/favicons/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicons/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
     <title>HTML Academy: Cat Energy</title>
   </head>
   <body class="page__body">
@@ -47,7 +120,7 @@
               >Каталог продукции</a
             >
           </li>
-          <li class="site-nav__item site-nav__item--active">
+          <li class="site-nav__item site-nav__item--active-other">
             <a class="site-nav__link site-nav__link--black" href="#"
               >Подбор программы</a
             >
@@ -62,13 +135,13 @@
         action="https://echo.htmlacademy.ru"
         method="post"
       >
-        <h1 class="form__title">Подбор программы</h1>
-        <p class="form__description">
+        <h1 class="form__title container">Подбор программы</h1>
+        <p class="form__description container">
           Заполните анкету, и мы подберем<br />
           программу питания для вашего кота
         </p>
 
-        <div class="form__wrapper--top">
+        <div class="form__wrapper--top container">
           <fieldset class="form__cat-data cat-data">
             <legend class="visually-hidden">Информация о коте</legend>
             <label class="cat-data__item">
@@ -107,7 +180,6 @@
           <fieldset class="form__program-data program-data cat-data__label">
             <legend class="visually-hidden">Выбор программы</legend>
             <label class="program-data__item">
-              <span class="program-data__label">Похудение</span>
               <input
                 class="program-data__input"
                 type="radio"
@@ -115,127 +187,136 @@
                 value="похудение"
                 checked
               />
+              <span class="program-data__label">Похудение</span>
               <span class="program-data__radio-icon"></span>
             </label>
 
             <label class="program-data__item">
-              <span class="program-data__label">Набор массы</span>
               <input
                 class="program-data__input"
                 type="radio"
                 name="program"
                 value="набор массы"
               />
+              <span class="program-data__label">Набор массы</span>
               <span class="program-data__radio-icon"></span>
             </label>
 
             <label class="program-data__item">
-              <span class="program-data__label">Не знаю (нужен ваш совет)</span>
               <input
                 class="program-data__input"
                 type="radio"
                 name="program"
                 value="консультация"
               />
+              <span class="program-data__label">Не знаю (нужен ваш совет)</span>
+              <span class="program-data__radio-icon"></span>
             </label>
           </fieldset>
         </div>
 
-        <fieldset class="form__contacts contacts">
-          <legend class="contacts__header">
-            Контактные данные<br />(владельца кота)
-          </legend>
-          <div class="contacts__wrapper form__wrapper--top">
-            <label class="contacts__item cat-data__item">
-              <span class="contacts__label cat-data__label">E-mail:*</span>
-              <input
-                class="contacts__input cat-data__input"
-                type="email"
-                name="email"
-                placeholder="kuklachev@gmail.com"
-                required
-              />
-              <span class="contacts__input-icon"></span>
-            </label>
+        <fieldset class="form__contacts contacts title-line">
+          <div class="container">
+            <legend class="contacts__header">
+              Контактные данные <br />(владельца кота)
+            </legend>
 
-            <label class="contacts__item cat-data__item">
-              <span class="contacts__label cat-data__label">Телефон:*</span>
-              <input
-                class="contacts__input cat-data__input"
-                type="tel"
-                name="phone"
-                placeholder="8 (960) 900-60-90"
-                required
-              />
-              <span class="contacts__input-icon"></span>
-            </label>
+            <div class="contacts__wrapper form__wrapper--top">
+              <label class="contacts__item cat-data__item">
+                <span class="contacts__label cat-data__label">E-mail:*</span>
+                <input
+                  class="contacts__input cat-data__input"
+                  type="email"
+                  name="email"
+                  placeholder="kuklachev@gmail.com"
+                  required
+                />
+                <span class="contacts__icon contacts__icon--mail"> </span>
+              </label>
+
+              <label class="contacts__item cat-data__item">
+                <span class="contacts__label cat-data__label">Телефон:*</span>
+                <input
+                  class="contacts__input cat-data__input"
+                  type="tel"
+                  name="phone"
+                  placeholder="8 (960) 900-60-90"
+                  required
+                />
+                <span class="contacts__icon contacts__icon--phone"></span>
+              </label>
+            </div>
           </div>
         </fieldset>
 
-        <fieldset class="form__comment comment">
-          <legend class="contacts__header">Комментарий</legend>
-          <textarea
-            class="comment__textarea cat-data__input"
-            name="comment"
-            placeholder="Расскажите обо всех повадках кота"
-          ></textarea>
-        </fieldset>
-
-        <fieldset class="form__optionally optionally-staff">
-          <legend class="contacts__header">Дополнительно</legend>
-          <div class="optionally-staff__wrapper">
-            <label class="optionally-staff__item">
-              <span class="optionally-staff__label cat-data__label"
-                >Сахарозаменитель</span
-              >
-              <input
-                class="optionally-staff__checkbox"
-                type="checkbox"
-                name="sweetener"
-                chacked
-              />
-              <span class="optionally-staff__checkbox-icon"></span>
-            </label>
-
-            <label class="optionally-staff__item">
-              <span class="optionally-staff__label cat-data__label"
-                >Питьевая вода</span
-              >
-              <input
-                class="optionally-staff__checkbox"
-                type="checkbox"
-                name="water"
-              />
-              <span class="optionally-staff__checkbox-icon"></span>
-            </label>
-
-            <label class="optionally-staff__item">
-              <span class="optionally-staff__label cat-data__label"
-                >Молоко</span
-              >
-              <input
-                class="optionally-staff__checkbox"
-                type="checkbox"
-                name="milk"
-              />
-              <span class="optionally-staff__checkbox-icon"></span>
-            </label>
-
-            <label class="optionally-staff__item">
-              <span class="optionally-staff__label cat-data__label"
-                >Витамины</span
-              >
-              <input
-                class="optionally-staff__checkbox"
-                type="checkbox"
-                name="vitamins"
-              />
-              <span class="optionally-staff__checkbox-icon"></span>
-            </label>
+        <fieldset class="form__comment comment title-line">
+          <div class="container">
+            <legend class="contacts__header">Комментарий</legend>
+            <textarea
+              class="comment__textarea cat-data__input"
+              name="comment"
+              placeholder="Расскажите обо всех повадках кота"
+            ></textarea>
           </div>
         </fieldset>
 
-        <div class="form__wrapper--bottom">
+        <fieldset class="form__optionally optionally-staff title-line">
+          <div class="container">
+            <legend class="contacts__header">Дополнительно</legend>
+            <div class="optionally-staff__wrapper">
+              <label class="optionally-staff__item">
+                <input
+                  class="optionally-staff__checkbox"
+                  type="checkbox"
+                  name="sweetener"
+                  chacked
+                />
+                <span class="optionally-staff__label cat-data__label"
+                  >Сахарозаменитель</span
+                >
+                <span class="optionally-staff__checkbox-icon"></span>
+              </label>
+
+              <label class="optionally-staff__item">
+                <input
+                  class="optionally-staff__checkbox"
+                  type="checkbox"
+                  name="water"
+                />
+                <span class="optionally-staff__label cat-data__label"
+                  >Питьевая вода</span
+                >
+                <span class="optionally-staff__checkbox-icon"></span>
+              </label>
+
+              <label class="optionally-staff__item">
+                <input
+                  class="optionally-staff__checkbox"
+                  type="checkbox"
+                  name="milk"
+                />
+                <span class="optionally-staff__label cat-data__label"
+                  >Молоко</span
+                >
+                <span class="optionally-staff__checkbox-icon"></span>
+              </label>
+
+              <label class="optionally-staff__item">
+                <input
+                  class="optionally-staff__checkbox"
+                  type="checkbox"
+                  name="vitamins"
+                />
+                <span class="optionally-staff__label cat-data__label"
+                  >Витамины</span
+                >
+                <span class="optionally-staff__checkbox-icon"></span>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="form__wrapper--bottom container">
           <button class="optionally-staff__button button" type="submit">
             Отправить заявку
           </button>
@@ -246,7 +327,7 @@
 
       <footer class="page-main__footer address">
         <h2 class="visually-hidden">Адрес магазина</h2>
-        <div class="address__wrapper">
+        <div class="address__wrapper address__wrapper--back">
           <p class="address__title">
             Приглашаем<br />к сотрудничеству<br />
             дилеров!

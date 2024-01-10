@@ -1,12 +1,12 @@
 .page {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: $tablet-width;
+    min-width: $tablet-width;
   }
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    min-width: $desktop-width;
   }
 }
 

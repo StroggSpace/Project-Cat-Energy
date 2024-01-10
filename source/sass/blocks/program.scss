@@ -7,12 +7,18 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 526px;
+    width: 708px;
+    padding: 0 90px 526px;
+    margin-left: auto;
+    margin-right: auto;
+
     align-items: flex-start;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 267px;
+    padding: 20px 610px 200px 80px;
+    width: 1220px;
+    margin-bottom: 200px;
   }
 }
 
@@ -24,41 +30,22 @@
   flex-direction: column;
   align-items: center;
 
-  background-image: url("../img/index-background-program.png");
+  background-image: url("../img/index-background-program-small.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: contain;
+  background-position: center;
   background-color: $basic-green;
-  background-blend-mode: soft-light;
 
   margin-bottom: 138px;
 
   @media (min-width: $tablet-width) {
     background: none;
 
-    width: calc(100% - 88px);
+    width: 414px;
     height: auto;
-    padding-left: 88px;
     margin-bottom: 50px;
 
     align-items: flex-start;
-  }
-
-  &::before {
-    @media (min-width: $desktop-width) {
-      content: "";
-      background-image: url("../img/index-background-program-big.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      background-color: $basic-green;
-      background-blend-mode: soft-light;
-
-      position: absolute;
-      top: -260px;
-      right: 0;
-      width: 720px;
-      height: 696px;
-      z-index: -1;
-    }
   }
 }
 
@@ -110,10 +97,11 @@
   bottom: 10%;
 
   @media (min-width: $tablet-width) {
-    width: 709px;
+    width: 708px;
     height: 609px;
 
     top: 200px;
+    left: 0;
     z-index: -1;
   }
 
@@ -121,8 +109,8 @@
     width: 552px;
     height: 499px;
 
-    top: -60px;
-    left: 40%;
+    top: 50px;
+    left: 450px;
   }
 }
 
@@ -133,6 +121,5 @@
   @media (min-width: $tablet-width) {
     align-self: flex-start;
     margin: 0;
-    margin-left: 88px;
   }
 }

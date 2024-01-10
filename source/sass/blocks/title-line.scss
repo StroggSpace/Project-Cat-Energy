@@ -1,0 +1,21 @@
+.title-line {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 0;
+    z-index: -1;
+
+    height: 2px;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      top: 20px;
+    }
+  }
+}

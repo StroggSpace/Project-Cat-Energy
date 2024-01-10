@@ -24,3 +24,46 @@
     grid-template-columns: repeat(4, 1fr);
   }
 }
+
+.optionally-staff__item {
+  position: relative;
+  padding-left: 50px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+  }
+
+  &:hover .optionally-staff__checkbox-icon {
+    border-color: #bababa;
+  }
+}
+
+.optionally-staff__checkbox-icon {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-gray-3;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.optionally-staff__checkbox:checked ~ .optionally-staff__checkbox-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 26px;
+  height: 26px;
+
+  background-image: url("../img/form/tick.svg");
+  background-repeat: no-repeat;
+}
