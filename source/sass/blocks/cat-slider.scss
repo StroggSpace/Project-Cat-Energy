@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     background-image: linear-gradient(to top, #eaeaea 400px, #ffffff 400px);
 
-    padding: 0 30px;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -196,7 +196,7 @@
   @media (min-width: 768px) {
     display: grid;
     grid-template-columns: 50% 1fr;
-    padding: 0 70px;
+    padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {

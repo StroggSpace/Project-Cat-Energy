@@ -86,30 +86,31 @@
         <nav class="page-header__nav">
           <div class="page-header__container">
             <a class="page-header__logo logo" href="#">
-              <img
-                class="logo__image"
-                src="img/logo-small.svg"
-                width="33.32px"
-                height="37.61px"
-                alt="Магазин Cat Energy"
-              />
-            </a>
-            <a class="page-header__logo logo" href="#">
-              <img
-                class="logo__name"
-                src="img/logo-small-name.svg"
-                width="101px"
-                height="18px"
-                alt="Главная страница магазина"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1300px)"
+                  srcset="img/logo-large.svg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="img/logo-medium.svg"
+                />
+                <img
+                  class="logo__name"
+                  src="img/logo-small-name.svg"
+                  width="101px"
+                  height="18px"
+                  alt="Главная страница магазина"
+                />
+              </picture>
             </a>
 
-            <button class="page-header__toggle" type="button">
+            <button class="page-header__toggle toggle" type="button">
               <span class="visually-hidden">Открыть меню</span>
             </button>
           </div>
 
-          <ul class="page-header__list site-nav site-nav--opened">
+          <ul class="page-header__list site-nav">
             <li class="site-nav__item site-nav__item--active">
               <a class="site-nav__link" href="#">Главная</a>
             </li>
@@ -135,10 +136,21 @@
           </h1>
           <p class="program__description">Занялся собой? Займись котом!</p>
         </div>
-        <img class="program__image" src="img/demo-product-img.png" width: 280px
-        height: 270px alt="Cat Energy PRO с курицей - демонстрационное
-        изображение">
-        <a class="program__button button" href="#">Подобрать программу</a>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              img/demo-product-img-medium.png    1x,
+              img/demo-product-img-medium@2x.png 2x
+            "
+          />
+          <img class="program__image" src="img/demo-product-img.png" width:
+          280px height: 270px srcset="img/demo-product-img@2x.png 2x" alt="Cat
+          Energy PRO с курицей - демонстрационное изображение">
+        </picture>
+        <a class="program__button button" href="./form.html"
+          >Подобрать программу</a
+        >
       </section>
 
       <section class="page-main__section catalog-options">
@@ -234,20 +246,40 @@
           <div class="cat-slider__main">
             <div class="cat-slider__images">
               <div class="cat-slider__image cat-slider__image--left">
-                <img
-                  src="img/cat-fat.png"
-                  width="280px"
-                  height="232px"
-                  alt="Кот Борис до"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/cat-fat-medium.png    1x,
+                      img/cat-fat-medium@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="img/cat-fat.png"
+                    width="280px"
+                    height="232px"
+                    srcset="img/cat-fat@2x.png 2x"
+                    alt="Кот Борис до"
+                  />
+                </picture>
               </div>
               <div class="cat-slider__image cat-slider__image--right">
-                <img
-                  src="img/cat-skinny.png"
-                  width="280px"
-                  height="232px"
-                  alt="Кот Борис после"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      img/cat-skinny-medium.png    1x,
+                      img/cat-skinny-medium@2x.png 2x
+                    "
+                  />
+                  <img
+                    src="img/cat-skinny.png"
+                    width="280px"
+                    height="232px"
+                    srcset="img/cat-skinny@2x.png 2x"
+                    alt="Кот Борис после"
+                  />
+                </picture>
               </div>
             </div>
 

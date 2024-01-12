@@ -22,14 +22,13 @@
 .page-footer__logo {
   display: flex;
   justify-content: center;
-  width: 100%;
   padding: 39px 0 32px 0;
 
   border-bottom: 1px solid #d9d9d9;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
-    width: fit-content;
+    padding: 63px 0 62px 0;
   }
 }
 

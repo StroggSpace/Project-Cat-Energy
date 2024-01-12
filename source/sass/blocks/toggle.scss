@@ -1,0 +1,39 @@
+.toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .toggle,
+  .toggle--opened {
+    display: none;
+  }
+}
+
+.toggle--opened::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: rotate(45deg);
+  height: 2px;
+  width: 24px;
+  background-color: $basic-black;
+}
+
+.toggle--opened::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: rotate(-45deg);
+  height: 2px;
+  width: 24px;
+  background-color: $basic-black;
+}

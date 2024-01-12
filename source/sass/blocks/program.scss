@@ -94,13 +94,18 @@
 
 .program__image {
   position: absolute;
-  bottom: 10%;
+
+  @media (max-width: 767px) {
+    bottom: 10%;
+    left: 50%;
+    transform: (translateX(-50%));
+  }
 
   @media (min-width: $tablet-width) {
     width: 708px;
     height: 609px;
 
-    top: 200px;
+    top: 220px;
     left: 0;
     z-index: -1;
   }
