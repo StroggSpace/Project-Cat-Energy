@@ -21,11 +21,11 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: flex-end;
+    gap: 36px;
   }
 
   @media (min-width: $desktop-width) {
-    justify-content: flex-end;
-    gap: 32px;
+    gap: 35px;
   }
 }
 
@@ -37,7 +37,7 @@
 
 .site-nav__item {
   width: 100%;
-  padding: 22px 0 24px 0;
+  padding: 20px 0 22px 0;
   text-align: center;
 
   border-top: 1px solid #e6e6e6;
@@ -46,7 +46,7 @@
     width: auto;
     border-top: none;
 
-    padding: 17px;
+    padding: 20px 0 17px;
   }
 }
 
@@ -59,8 +59,8 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       bottom: 10px;
-      right: 17px;
-      left: 17px;
+      right: 0;
+      left: 0;
       height: 2px;
 
       background-color: $basic-green;
@@ -81,8 +81,8 @@
     @media (min-width: $tablet-width) {
       position: absolute;
       bottom: 10px;
-      right: 17px;
-      left: 17px;
+      right: 0;
+      left: 0;
       height: 2px;
 
       background-color: $basic-green;
@@ -107,6 +107,8 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    font-style: normal;
+    font-weight: 400;
   }
 
   &:hover {
@@ -119,6 +121,9 @@
 
   @media (min-width: $desktop-width) {
     color: $basic-white;
+
+    font-size: 20px;
+    line-height: normal;
   }
 }
 

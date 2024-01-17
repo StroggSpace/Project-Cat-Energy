@@ -7,8 +7,12 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 43px;
-    padding: 20px;
-    padding-bottom: 49px;
+    padding-top: 20px;
+    padding-bottom: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 28px;
   }
 }
 
@@ -32,32 +36,33 @@
   @include head-font-style;
 
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
 
-    margin-bottom: 70px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 100px;
+    margin-bottom: 75px;
   }
 }
 
 .advantages__list {
   @include list-reset;
 
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 20px;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 154px;
+    column-gap: 60px;
     row-gap: 37px;
 
     @media (min-width: $desktop-width) {
       grid-template-columns: repeat(4, 1fr);
-      column-gap: 60px;
+      column-gap: 80px;
     }
   }
 }
@@ -74,9 +79,9 @@
     grid-template-columns: auto;
     grid-template-rows: 80px auto;
     align-items: start;
+    gap: 30px;
 
-    padding-top: 40px;
-    padding-right: 72px;
+    padding-top: 0;
     min-height: 280px;
 
     counter-increment: process;
@@ -87,28 +92,38 @@
       content: counter(process);
       position: absolute;
       top: 0;
-      right: 80px;
+      right: 85px;
       z-index: -1;
       color: #f2f2f2;
       font-family: "Oswald", "Arial", sans-serif;
       font-size: 280px;
-      line-height: 280px;
+      line-height: 200px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 0;
     }
   }
 }
 
 .advantages__description {
   color: $color-gray-5;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     color: $color-gray-5;
 
     font-size: 16px;
     line-height: 24px;
-
-    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    padding-right: 70px;
 
     align-self: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 0;
   }
 }
 

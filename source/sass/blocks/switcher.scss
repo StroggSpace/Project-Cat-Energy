@@ -1,14 +1,20 @@
 .switcher {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  gap: 18px;
+
+  @media (min-width: $tablet-width) {
+    gap: 22px;
+  }
 }
 
 .switcher__button {
   @include reset-button;
 
   color: $basic-black;
+  margin-top: 1px;
 
   font-family: $font-header;
   font-size: 16px;

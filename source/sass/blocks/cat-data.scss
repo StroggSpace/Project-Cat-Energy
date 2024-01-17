@@ -68,9 +68,17 @@
   &:focus-visible {
     outline: none;
     border: 2px solid $color-gray-5;
+  }
 
-    .contacts__icon {
-      fill: $basic-green;
-    }
+  &:focus-visible + .contacts__icon {
+    color: $basic-green;
+  }
+}
+
+.cat-data__input--error {
+  border: 2px solid #ff8282;
+
+  & + .contacts__icon {
+    color: #ff8282;
   }
 }

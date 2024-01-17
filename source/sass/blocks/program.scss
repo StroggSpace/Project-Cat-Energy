@@ -8,7 +8,7 @@
 
   @media (min-width: $tablet-width) {
     width: 708px;
-    padding: 0 90px 526px;
+    padding: 0 90px 505px;
     margin-left: auto;
     margin-right: auto;
 
@@ -18,7 +18,7 @@
   @media (min-width: $desktop-width) {
     padding: 20px 610px 200px 80px;
     width: 1220px;
-    margin-bottom: 200px;
+    margin-bottom: 68px;
   }
 }
 
@@ -47,6 +47,10 @@
 
     align-items: flex-start;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 52px;
+  }
 }
 
 .program__title {
@@ -58,7 +62,8 @@
   line-height: 36px;
   text-align: center;
 
-  margin-top: 27px;
+  margin-top: 26px;
+  margin-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     color: $basic-black;
@@ -66,8 +71,10 @@
     font-weight: 400;
     line-height: 60px;
     text-align: start;
+    font-style: normal;
 
     margin-bottom: 40px;
+    margin-top: 31px;
   }
 }
 
@@ -96,17 +103,17 @@
   position: absolute;
 
   @media (max-width: 767px) {
-    bottom: 10%;
+    bottom: 9%;
     left: 50%;
     transform: (translateX(-50%));
   }
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    height: 609px;
+    width: 670px;
+    height: 610px;
 
-    top: 220px;
-    left: 0;
+    top: 233px;
+    left: 40px;
     z-index: -1;
   }
 
@@ -114,17 +121,26 @@
     width: 552px;
     height: 499px;
 
-    top: 50px;
+    top: -30px;
     left: 450px;
   }
 }
 
 .program__button {
   width: 280px;
+  height: 40px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     align-self: flex-start;
     margin: 0;
+    padding-top: 17px;
+
+    width: 244px;
+    height: 54px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
   }
 }

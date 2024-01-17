@@ -1,11 +1,8 @@
 .page-header {
   position: relative;
 
-  border-bottom: 1px solid #d9d9d9;
-
   @media (min-width: $tablet-width) {
     padding: 0;
-    border-bottom: none;
   }
 }
 
@@ -19,7 +16,7 @@
       background-color: #63a63b;
       top: 0;
       right: 0;
-      bottom: -655px;
+      bottom: -520px;
       left: 50%;
       z-index: -1;
       background-repeat: no-repeat;
@@ -37,11 +34,15 @@
   @media (max-width: 767px) {
     width: 320px;
     margin: 0 auto;
-    padding: 12px 20px 13px;
+    padding: 10px 20px 11px;
   }
 
   @media (min-width: $tablet-width) {
     justify-content: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
   }
 }
 
@@ -51,7 +52,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 174px 1fr;
-    gap: 16px;
+    gap: 40px;
 
     width: 708px;
     margin: 0 auto;
@@ -60,6 +61,8 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    padding: 50px 0;
+    margin-bottom: 5px;
   }
 }
 
@@ -79,7 +82,7 @@
       background-image: url("../img/logo-small.svg");
       background-repeat: no-repeat;
       width: 34px;
-      height: 40px;
+      height: 45px;
     }
   }
 

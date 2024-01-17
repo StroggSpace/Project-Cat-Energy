@@ -11,10 +11,10 @@
 }
 
 .address__wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 125px 1fr;
   align-items: center;
-  justify-content: space-between;
-  gap: 10px;
+  gap: 18px;
 
   width: 280px;
   margin: 0 auto;
@@ -22,17 +22,19 @@
   padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: 3fr 1fr;
     width: 708px;
-    padding: 60px 70px 56px;
+    padding: 60px 40px 58px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
     width: 565px;
     height: 198px;
-    top: 50%;
-    right: 54%;
+    top: 49%;
+    right: 53%;
     transform: translateY(-50%);
+    padding: 60px 76px;
 
     background-color: $basic-white;
   }
@@ -80,5 +82,11 @@
 
   @media (min-width: $tablet-width) and (max-width: 1299px) {
     text-align: right;
+  }
+}
+
+.address__map iframe {
+  @media (max-width: 767px) {
+    height: 362px;
   }
 }
