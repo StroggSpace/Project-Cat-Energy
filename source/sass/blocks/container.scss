@@ -1,7 +1,7 @@
 .container {
   margin-right: auto;
   margin-left: auto;
-  width: 280px;
+  width: 320px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
@@ -9,5 +9,31 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+  }
+}
+
+.container__title {
+  @include head-font-style;
+
+  text-align: start;
+  line-height: 36px;
+
+  width: fit-content;
+  margin-top: 26px;
+  margin-bottom: 41px;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    margin-top: 32px;
+    margin-bottom: 82px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 83px;
+    margin-top: 17px;
   }
 }

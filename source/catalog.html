@@ -77,6 +77,32 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("/layout/Mobile-catalog.png");
+      }
+      /* Планшет */
+      @media (min-width: 768px) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url("/layout/Tablet-catalog.png");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1300px) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url("/layout/Desktop-catalog.png");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
     <title>HTML Academy: Cat Energy</title>
   </head>
   <body class="page__body">
@@ -84,7 +110,7 @@
       <nav class="page-header__nav">
         <div class="page-header__container">
           <a class="page-header__logo logo" href="./index.html">
-            <picture class="card__link-image">
+            <picture>
               <source media="(min-width: 1300px)" srcset="img/logo-large.svg" />
               <source media="(min-width: 768px)" srcset="img/logo-medium.svg" />
               <img
@@ -124,7 +150,7 @@
 
     <main class="page__main page-main">
       <header class="page-main__header container">
-        <h1 class="page-main__title">Каталог продукции</h1>
+        <h1 class="container__title">Каталог продукции</h1>
       </header>
       <section class="page-main__catalog catalog">
         <div class="catalog__container container">
@@ -140,8 +166,10 @@
                   "
                 />
                 <img
-                  src="/img/catalog/500-orange-small.png"
-                  srcset="/img/catalog/500-orange-small@2x.png 2x"
+                  src="img/catalog/500-orange-small.png"
+                  width="68px"
+                  height="86px"
+                  srcset="img/catalog/500-orange-small@2x.png 2x"
                   alt="Cat Energy Pro 500 грамм курица"
                 />
               </picture>
@@ -179,7 +207,9 @@
                 />
                 <img
                   src="img/catalog/1000-orange-small.png"
-                  srcset="/img/catalog/1000-orange-small@2x.png 2x"
+                  width="84px"
+                  height="100.8px"
+                  srcset="img/catalog/1000-orange-small@2x.png 2x"
                   alt="Cat Energy Pro 1000 грамм курица"
                 />
               </picture>
@@ -218,7 +248,9 @@
                 />
                 <img
                   src="img/catalog/500-green-small.png"
-                  srcset="/img/catalog/500-green-small@2x.png 2x"
+                  width="68px"
+                  height="78px"
+                  srcset="img/catalog/500-green-small@2x.png 2x"
                   alt="Cat Energy Pro 500 грамм рыба"
                 />
               </picture>
@@ -257,7 +289,9 @@
                 />
                 <img
                   src="img/catalog/1000-green-small.png"
-                  srcset="/img/catalog/1000-green-small@2x.png 2x"
+                  width="84px"
+                  height="100.8px"
+                  srcset="img/catalog/1000-green-small@2x.png 2x"
                   alt="Cat Energy Pro 1000 грамм рыба"
                 />
               </picture>
@@ -296,7 +330,9 @@
                 />
                 <img
                   src="img/catalog/500-blue-small.png"
-                  srcset="/img/catalog/500-blue-small@2x.png 2x"
+                  width="68px"
+                  height="78px"
+                  srcset="img/catalog/500-blue-small@2x.png 2x"
                   alt="Cat Energy Slim 500 грамм гречка"
                 />
               </picture>
@@ -334,7 +370,9 @@
                 />
                 <img
                   src="img/catalog/1000-blue-small.png"
-                  srcset="/img/catalog/1000-blue-small@2x.png 2x"
+                  width="84px"
+                  height="100px"
+                  srcset="img/catalog/1000-blue-small@2x.png 2x"
                   alt="Cat Energy Slim 1000 грамм гречка"
                 />
               </picture>
@@ -373,7 +411,9 @@
                 />
                 <img
                   src="img/catalog/purple-500-small.png"
-                  srcset="/img/catalog/purple-500-small@2x.png 2x"
+                  width="72px"
+                  height="84px"
+                  srcset="img/catalog/purple-500-small@2x.png 2x"
                   alt="Cat Energy Slim 500 грамм рис"
                 />
               </picture>
@@ -403,7 +443,7 @@
             <div class="catalog__show-more-wrapper">
               <img
                 class="catalog__show-more-image"
-                src="../img/catalog/plus.svg"
+                src="img/catalog/plus.svg"
                 alt="Дополнительные товары"
               />
               <p class="catalog__show-more-description">
@@ -473,7 +513,9 @@
           <div class="optionally__gift-info">
             <img
               class="optionally__gift-info-image"
-              src="../img/catalog/icon_gift.svg"
+              width="78px"
+              height="80px"
+              src="img/catalog/icon_gift.svg"
               alt="Акция"
             />
             <p class="optionally__gift-info-text">
@@ -490,9 +532,8 @@
             Приглашаем<br />к сотрудничеству<br />
             дилеров!
           </p>
-          <p class="address__description">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+          <p class="address__description">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="address__description">Санкт-Петербург</p>
         </div>
         <div class="address__map">
           <script
@@ -557,6 +598,6 @@
       </div>
     </footer>
 
-    <script src="../js/burger.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>

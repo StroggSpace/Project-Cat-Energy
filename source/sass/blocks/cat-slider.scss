@@ -3,13 +3,12 @@
   padding-top: 1px;
 
   @media (min-width: $tablet-width) {
-    background-image: linear-gradient(to top, #eaeaea 480px, #ffffff 480px);
+    background-image: linear-gradient(to top, #eaeaea 460px, #ffffff 460px);
 
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: linear-gradient(to top, #eaeaea 390px, #ffffff 390px);
     padding-bottom: 70px;
   }
 }
@@ -28,6 +27,30 @@
     column-gap: 196px;
 
     width: 1220px;
+  }
+}
+
+.cat-slider__header {
+  @include head-font-style;
+
+  text-align: start;
+  line-height: 36px;
+
+  width: fit-content;
+  margin-top: 26px;
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+
+    margin-top: 0;
+    margin-bottom: 82px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 75px;
   }
 }
 

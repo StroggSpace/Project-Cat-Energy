@@ -78,6 +78,32 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <title>HTML Academy: Cat Energy</title>
+    <!-- Pixel Glass -->
+    <style>
+      HTML {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        /* По умолчанию показывается мобильный макет */
+        background-image: url("/layout/Mobile-form.png");
+      }
+      /* Планшет */
+      @media (min-width: 768px) {
+        HTML {
+          /* Планшетный макет */
+          background-image: url("/layout/Tablet-form.png");
+        }
+      }
+      /* Десктоп */
+      @media (min-width: 1300px) {
+        HTML {
+          /* Десктопный макет */
+          background-image: url("/layout/Desktop-form.png");
+        }
+      }
+    </style>
+    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
+    <script src="../node_modules/pixel-glass/script.js"></script>
+    <!-- // Pixel Glass -->
   </head>
   <body class="page__body">
     <header class="page__header page-header">
@@ -407,6 +433,6 @@
       </div>
     </footer>
 
-    <script src="../js/burger.js"></script>
+    <script src="js/burger.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 .optionally {
   position: relative;
+  margin-bottom: 5px;
 
   &::before {
     content: "";
@@ -14,8 +15,10 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+
     &::before {
-      top: 50px;
+      top: 22px;
     }
   }
 }
@@ -46,16 +49,20 @@
 
   position: relative;
   padding: 0 20px;
-  margin-left: -20px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
 
     margin-bottom: 80px;
-    margin-left: -25px;
+    margin-top: 0;
 
     padding: 0 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: -35px;
   }
 }
 
@@ -76,7 +83,7 @@
   grid-template-columns: auto;
 
   border-bottom: 1px solid $color-gray-3;
-  padding: 13px 0 19px;
+  padding: 13px 20px 18px;
 
   &:first-child {
     border-top: 1px solid $color-gray-3;
@@ -88,7 +95,8 @@
     border: 1px solid $color-gray-3;
     border-bottom: none;
 
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 3fr 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
 
     &:last-child {
       border-bottom: 1px solid $color-gray-3;
@@ -98,10 +106,11 @@
   @media (min-width: $desktop-width) {
     border-left: none;
     border-right: none;
-    padding: 15px 0 17px 0;
+    padding: 15px 0 14px 0;
     width: 895px;
 
-    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-columns: 286px 206px 1fr 244px;
+    grid-template-rows: auto;
     gap: 38px;
   }
 }
@@ -124,7 +133,11 @@
     font-size: 20px;
     line-height: 20px;
 
-    margin: auto 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
   }
 }
 
@@ -138,11 +151,12 @@
 
     font-size: 16px;
     line-height: 20px;
-    margin-top: 0;
+    margin-top: 4px;
   }
 
   @media (min-width: $desktop-width) {
     margin: auto 0;
+    margin-right: auto;
   }
 }
 
@@ -151,6 +165,12 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 2/3;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin-bottom: 10px;
   }
 }
 
@@ -165,6 +185,7 @@
 
 .optionally__button {
   grid-column: 1/3;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/4;
@@ -181,11 +202,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 
   width: 280px;
   height: 290px;
-  margin-bottom: 35px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  padding: 59px 0 43px;
 
   background-image: url("../img/catalog/cat-gift.jpg");
   background-repeat: no-repeat;
@@ -196,17 +219,28 @@
     width: 100%;
     height: 200px;
     margin-bottom: 76px;
+    padding: 55px 125px 53px 76px;
 
     flex-direction: row;
-    justify-content: space-around;
-    background-position: center;
+    justify-content: space-between;
+    background-position: 0 60%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 244px;
-    height: 303px;
+    width: 245px;
+    height: 289px;
 
-    margin-bottom: 0;
+    margin: 0;
+    margin-left: auto;
+    background-position: 100% 0;
+  }
+}
+
+.optionally__gift-info-image {
+  @media (min-width: $tablet-width) and (max-width: 1299px) {
+    margin-bottom: auto;
+    width: 80px;
+    height: 82px;
   }
 }
 
@@ -215,6 +249,7 @@
   text-align: center;
   font-size: 16px;
   line-height: 20px;
+  margin: 0;
 
   @media (min-width: $tablet-width) and (max-width: 1299px) {
     text-align: left;
