@@ -78,32 +78,6 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
     <title>HTML Academy: Cat Energy</title>
-    <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url("/layout/Mobile-form.png");
-      }
-      /* Планшет */
-      @media (min-width: 768px) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url("/layout/Tablet-form.png");
-        }
-      }
-      /* Десктоп */
-      @media (min-width: 1300px) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url("/layout/Desktop-form.png");
-        }
-      }
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
   </head>
   <body class="page__body">
     <header class="page__header page-header">
@@ -151,18 +125,21 @@
     </header>
 
     <main class="page__main page-main">
+      <header class="page-main__header container">
+        <h1 class="container__title-form">Подбор программы</h1>
+      </header>
+
+      <p class="form__description container">
+        Заполните анкету, и мы подберем<br />
+        программу питания для вашего кота
+      </p>
+
       <form
         class="page-main__form form"
         action="https://echo.htmlacademy.ru"
         method="post"
       >
-        <h1 class="form__title container">Подбор программы</h1>
-        <p class="form__description container">
-          Заполните анкету, и мы подберем<br />
-          программу питания для вашего кота
-        </p>
-
-        <div class="form__wrapper--top container">
+        <div class="form__wrapper--top">
           <fieldset class="form__cat-data cat-data">
             <legend class="visually-hidden">Информация о коте</legend>
             <label class="cat-data__item">
@@ -236,9 +213,9 @@
           </fieldset>
         </div>
 
-        <fieldset class="form__contacts contacts title-line">
-          <div class="container">
-            <legend class="contacts__header">
+        <div class="title-line">
+          <fieldset class="form__contacts contacts">
+            <legend class="contacts__header form__subtitle">
               Контактные данные <br />(владельца кота)
             </legend>
 
@@ -280,23 +257,25 @@
                 </svg>
               </label>
             </div>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__comment comment title-line">
-          <div class="container">
-            <legend class="contacts__header">Комментарий</legend>
+        <div class="title-line">
+          <fieldset class="form__comment comment">
+            <legend class="comment__header form__subtitle">Комментарий</legend>
             <textarea
               class="comment__textarea cat-data__input"
               name="comment"
               placeholder="Расскажите обо всех повадках кота"
             ></textarea>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <fieldset class="form__optionally optionally-staff title-line">
-          <div class="container">
-            <legend class="contacts__header">Дополнительно</legend>
+        <div class="title-line">
+          <fieldset class="form__optionally optionally-staff">
+            <legend class="optionally-staff__header form__subtitle">
+              Дополнительно
+            </legend>
             <div class="optionally-staff__wrapper">
               <label class="optionally-staff__item">
                 <input
@@ -347,10 +326,10 @@
                 <span class="optionally-staff__checkbox-icon"></span>
               </label>
             </div>
-          </div>
-        </fieldset>
+          </fieldset>
+        </div>
 
-        <div class="form__wrapper--bottom container">
+        <div class="form__wrapper--bottom">
           <button class="optionally-staff__button button" type="submit">
             Отправить заявку
           </button>
@@ -361,14 +340,14 @@
 
       <footer class="page-main__footer address">
         <h2 class="visually-hidden">Адрес магазина</h2>
-        <div class="address__wrapper address__wrapper--back">
+        <div class="address__wrapper">
           <p class="address__title">
-            Приглашаем<br />к сотрудничеству<br />
-            дилеров!
+            Приглашаем<br />к сотрудничеству дилеров!
           </p>
-          <p class="address__description">
-            ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-          </p>
+          <div class="address__wrapper-text">
+            <p class="address__description">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="address__description">Санкт-Петербург</p>
+          </div>
         </div>
         <div class="address__map">
           <script

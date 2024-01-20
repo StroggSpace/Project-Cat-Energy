@@ -1,7 +1,28 @@
 .optionally-staff {
   @include fieldset-reset;
+  padding: 0 20px;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 0 0 110px;
+  }
+}
+
+.optionally-staff__header {
+  padding: 0 20px;
+  margin-bottom: 35px;
+  margin-left: -20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 40px;
+    margin-left: -40px;
+    margin-bottom: 61px;
+  }
 }
 
 .optionally-staff__label {
@@ -11,23 +32,30 @@
 .optionally-staff__wrapper {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 15px;
+  row-gap: 23px;
 
   margin-bottom: 34px;
+  margin-top: 5px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 32px;
+    row-gap: 43px;
+    column-gap: 60px;
+    margin: 0;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 221px);
+    column-gap: 105px;
+
+    margin-bottom: 69px;
   }
 }
 
 .optionally-staff__item {
   position: relative;
-  padding-left: 50px;
+  padding-left: 45px;
 
   @media (min-width: $tablet-width) {
     padding-left: 60px;
@@ -66,4 +94,18 @@
 
   background-image: url("../img/form/tick.svg");
   background-repeat: no-repeat;
+}
+
+.optionally-staff__button {
+  margin: 3px 20px;
+
+  font-size: 16px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+
+    font-size: 20px;
+    line-height: 125%;
+  }
 }

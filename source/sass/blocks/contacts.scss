@@ -1,7 +1,16 @@
 .contacts {
   @include fieldset-reset;
+  padding: 0 20px 24px;
 
   border: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 110px;
+  }
 }
 
 .contacts__wrapper {
@@ -10,11 +19,9 @@
   flex-wrap: wrap;
   gap: 14px;
 
-  margin-bottom: 24px;
-
   @media (min-width: $tablet-width) {
-    gap: 20px;
-    margin-bottom: 65px;
+    gap: 25px;
+    margin-bottom: 70px;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,25 +31,14 @@
 }
 
 .contacts__header {
-  color: $basic-black;
-  background-color: $basic-white;
-
-  font-family: $font-header;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 26px;
-
-  width: max-content;
   padding: 0 20px;
   margin-bottom: 35px;
   margin-left: -20px;
 
   @media (min-width: $tablet-width) {
-    font-size: 36px;
-    line-height: 36px;
-
-    margin-bottom: 76px;
+    margin-bottom: 79px;
+    padding: 0 40px;
+    margin-left: -40px;
 
     br {
       display: none;

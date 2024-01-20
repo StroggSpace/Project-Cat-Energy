@@ -77,32 +77,6 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
-    <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url("/layout/Mobile-catalog.png");
-      }
-      /* Планшет */
-      @media (min-width: 768px) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url("/layout/Tablet-catalog.png");
-        }
-      }
-      /* Десктоп */
-      @media (min-width: 1300px) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url("/layout/Desktop-catalog.png");
-        }
-      }
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet" />
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
     <title>HTML Academy: Cat Energy</title>
   </head>
   <body class="page__body">
@@ -525,15 +499,16 @@
         </div>
       </section>
 
-      <footer class="page-main__footer address address--back">
+      <footer class="page-main__footer address">
         <h2 class="visually-hidden">Адрес магазина</h2>
-        <div class="address__wrapper address__wrapper--back">
+        <div class="address__wrapper">
           <p class="address__title">
-            Приглашаем<br />к сотрудничеству<br />
-            дилеров!
+            Приглашаем<br />к сотрудничеству дилеров!
           </p>
-          <p class="address__description">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__description">Санкт-Петербург</p>
+          <div class="address__wrapper-text">
+            <p class="address__description">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="address__description">Санкт-Петербург</p>
+          </div>
         </div>
         <div class="address__map">
           <script
