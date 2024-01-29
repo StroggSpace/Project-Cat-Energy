@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
     <link
       rel="apple-touch-icon"
       sizes="57x57"
@@ -77,6 +77,8 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" />
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" />
     <title>HTML Academy: Cat Energy</title>
   </head>
   <body class="page__body">
@@ -135,15 +137,21 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/catalog/500-orange-medium.png    1x,
-                    img/catalog/500-orange-medium@2x.png 2x
+                    img/catalog/500-orange-medium.webp    1x,
+                    img/catalog/500-orange-medium.png     1x,
+                    img/catalog/500-orange-medium@2x.webp 2x,
+                    img/catalog/500-orange-medium@2x.png  2x
                   "
                 />
                 <img
                   src="img/catalog/500-orange-small.png"
                   width="68px"
                   height="86px"
-                  srcset="img/catalog/500-orange-small@2x.png 2x"
+                  srcset="
+                    img/catalog/500-orange-small.webp    1x,
+                    img/catalog/500-orange-small@2x.webp 2x,
+                    img/catalog/500-orange-small@2x.png  2x
+                  "
                   alt="Cat Energy Pro 500 грамм курица"
                 />
               </picture>
@@ -175,15 +183,21 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/catalog/1000-orange-medium.png    1x,
-                    img/catalog/1000-orange-medium@2x.png 2x
+                    img/catalog/1000-orange-medium.webp    1x,
+                    img/catalog/1000-orange-medium.png     1x,
+                    img/catalog/1000-orange-medium@2x.webp 2x,
+                    img/catalog/1000-orange-medium@2x.png  2x
                   "
                 />
                 <img
                   src="img/catalog/1000-orange-small.png"
                   width="84px"
                   height="100.8px"
-                  srcset="img/catalog/1000-orange-small@2x.png 2x"
+                  srcset="
+                    img/catalog/1000-orange-small.webp    1x,
+                    img/catalog/1000-orange-small@2x.webp 2x,
+                    img/catalog/1000-orange-small@2x.png  2x
+                  "
                   alt="Cat Energy Pro 1000 грамм курица"
                 />
               </picture>
@@ -216,15 +230,21 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/catalog/500-green-medium.png    1x,
-                    img/catalog/500-green-medium@2x.png 2x
+                    img/catalog/500-green-medium.webp    1x,
+                    img/catalog/500-green-medium.png     1x,
+                    img/catalog/500-green-medium@2x.webp 2x,
+                    img/catalog/500-green-medium@2x.png  2x
                   "
                 />
                 <img
                   src="img/catalog/500-green-small.png"
                   width="68px"
                   height="78px"
-                  srcset="img/catalog/500-green-small@2x.png 2x"
+                  srcset="
+                    img/catalog/500-green-small.webp    1x,
+                    img/catalog/500-green-small@2x.webp 2x,
+                    img/catalog/500-green-small@2x.png  2x
+                  "
                   alt="Cat Energy Pro 500 грамм рыба"
                 />
               </picture>
@@ -257,15 +277,21 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/catalog/1000-green-medium.png    1x,
-                    img/catalog/1000-green-medium@2x.png 2x
+                    img/catalog/1000-green-medium.webp    1x,
+                    img/catalog/1000-green-medium.png     1x,
+                    img/catalog/1000-green-medium@2x.webp 2x,
+                    img/catalog/1000-green-medium@2x.png  2x
                   "
                 />
                 <img
                   src="img/catalog/1000-green-small.png"
                   width="84px"
                   height="100.8px"
-                  srcset="img/catalog/1000-green-small@2x.png 2x"
+                  srcset="
+                    img/catalog/1000-green-small.webp    1x,
+                    img/catalog/1000-green-small@2x.webp 2x,
+                    img/catalog/1000-green-small@2x.png  2x
+                  "
                   alt="Cat Energy Pro 1000 грамм рыба"
                 />
               </picture>
@@ -298,15 +324,21 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/catalog/500-blue-medium.png    1x,
-                    img/catalog/500-blue-medium@2x.png 2x
+                    img/catalog/500-blue-medium.webp    1x,
+                    img/catalog/500-blue-medium.png     1x,
+                    img/catalog/500-blue-medium@2x.webp 2x,
+                    img/catalog/500-blue-medium@2x.png  2x
                   "
                 />
                 <img
                   src="img/catalog/500-blue-small.png"
                   width="68px"
                   height="78px"
-                  srcset="img/catalog/500-blue-small@2x.png 2x"
+                  srcset="
+                    img/catalog/500-blue-small.webp    1x,
+                    img/catalog/500-blue-small@2x.webp 2x,
+                    img/catalog/500-blue-small@2x.png  2x
+                  "
                   alt="Cat Energy Slim 500 грамм гречка"
                 />
               </picture>
@@ -338,15 +370,21 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/catalog/1000-blue-medium.png    1x,
-                    img/catalog/1000-blue-medium@2x.png 2x
+                    img/catalog/1000-blue-medium.webp    1x,
+                    img/catalog/1000-blue-medium.png     1x,
+                    img/catalog/1000-blue-medium@2x.webp 2x,
+                    img/catalog/1000-blue-medium@2x.png  2x
                   "
                 />
                 <img
                   src="img/catalog/1000-blue-small.png"
                   width="84px"
                   height="100px"
-                  srcset="img/catalog/1000-blue-small@2x.png 2x"
+                  srcset="
+                    img/catalog/1000-blue-small.webp    1x,
+                    img/catalog/1000-blue-small@2x.webp 2x,
+                    img/catalog/1000-blue-small@2x.png  2x
+                  "
                   alt="Cat Energy Slim 1000 грамм гречка"
                 />
               </picture>
@@ -379,15 +417,21 @@
                 <source
                   media="(min-width: 768px)"
                   srcset="
-                    img/catalog/purple-500-medium.png    1x,
-                    img/catalog/purple-500-medium@2x.png 2x
+                    img/catalog/purple-500-medium.webp    1x,
+                    img/catalog/purple-500-medium.png     1x,
+                    img/catalog/purple-500-medium@2x.webp 2x,
+                    img/catalog/purple-500-medium@2x.png  2x
                   "
                 />
                 <img
                   src="img/catalog/purple-500-small.png"
                   width="72px"
                   height="84px"
-                  srcset="img/catalog/purple-500-small@2x.png 2x"
+                  srcset="
+                    img/catalog/purple-500-small.webp    1x,
+                    img/catalog/purple-500-small@2x.webp 2x,
+                    img/catalog/purple-500-small@2x.png  2x
+                  "
                   alt="Cat Energy Slim 500 грамм рис"
                 />
               </picture>
@@ -573,6 +617,6 @@
       </div>
     </footer>
 
-    <script src="js/burger.js"></script>
+    <script src="scripts/burger.js"></script>
   </body>
 </html>

@@ -1,9 +1,9 @@
 // Подключение шрифтов и переменных
-@import "./fonts.scss";
-@import "./variables.scss";
+@import "./global/fonts.scss";
+@import "./global/variables.scss";
 
 // Подключение миксинов
-@import "./mixins.scss";
+@import "./global/mixins.scss";
 
 // Стили проекта
 @import "./blocks/global.scss";
