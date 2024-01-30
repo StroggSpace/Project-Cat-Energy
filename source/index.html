@@ -77,8 +77,20 @@
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
     <meta name="theme-color" content="#ffffff" />
-    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" />
-    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" />
+    <link
+      rel="preload"
+      href="fonts/oswaldmedium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin="anonymous"
+    />
     <title>HTML Academy: Cat Energy</title>
   </head>
 
@@ -337,14 +349,7 @@
             <p class="address__description">Санкт-Петербург</p>
           </div>
         </div>
-        <div class="address__map">
-          <script
-            type="text/javascript"
-            charset="utf-8"
-            async
-            src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab8c638adddde6ab8fbecc1f8fd137c080812e3fe518271e3a719d6a4b3e6b19d&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
-          ></script>
-        </div>
+        <div class="address__map" id="map_container"></div>
       </footer>
     </main>
 
@@ -393,6 +398,7 @@
             class="page-footer__copyright-logo-image"
             width="27px"
             height="34px"
+            alt="Сайт HTML Academy"
           >
             <use xlink:href="img/icon-sprite.svg#logo-html"></use>
           </svg>
@@ -401,5 +407,6 @@
     </footer>
 
     <script src="scripts/burger.js"></script>
+    <script src="scripts/lazy-map.js"></script>
   </body>
 </html>
